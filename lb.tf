@@ -1,4 +1,4 @@
-resource "aws_lb" "ecs_lb" {
+resource "aws_lb" "SG" {
   name            = "example-lb"
   subnets         = aws_subnet.public.*.id
   security_groups = [aws_security_group.hello_world_task.id]
