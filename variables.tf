@@ -13,3 +13,9 @@ variable "secret_key" {
 variable "AWS_ECR_REGION" {
   default = "us-east-1"
 }
+
+
+variable "app_count" {
+  type = number
+  default = 1
+}
