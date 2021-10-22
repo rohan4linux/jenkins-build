@@ -3,10 +3,9 @@
 	"networkMode": "awsvpc",
 	"cpu": "256",
 	"memory": "512",
-	"execution_role_arn": "arn:aws:iam::788967628378:role/ecsTaskExecutionRole",
 	"containerDefinitions": [{
 		"essential": true,
-		"name": "hello-world",
+		"name": "hello-jenkins",
 		"image": "public.ecr.aws/s5q0x2a7/hello-jenkins:latest",
 		"portMappings": [{
 			"containerPort": 80,
