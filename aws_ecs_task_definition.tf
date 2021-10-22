@@ -1,9 +1,9 @@
 data "template_file" "hello-world" {
    template = "${file("templates/ecs/hello-world.json.tpl")}"
-   vars = {
-     REPOSITORY_URL = "${aws_ecr_repository.hello-world.repository_url}"
-     AWS_ECR_REGION = "${var.AWS_ECR_REGION}"
-   }
+   #vars = {
+    # REPOSITORY_URL = "${aws_ecr_repository.hello-world.repository_url}"
+    # AWS_ECR_REGION = "${var.AWS_ECR_REGION}"
+   #}
  }
 
 resource "aws_ecs_task_definition" "hello_world" {
